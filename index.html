@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>ショッピングサイトサンプル</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+   <!-- Owl Carousel CSS -->
+   <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+   <!-- Owl Carousel JS -->
+   <script src="owlcarousel/owl.carousel.min.js"></script>
+   
+   <!-- Owl Carouselを動作させるために追加 -->
+   <script src="shop-carousel.js"></script>
+   
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+    <body>
+    <div id="wrapper">
+        <header>
+          <div id="header_in" class="container">
+            <div class="row">
+              <div class="six columns" >
+                 <h1 class="logo">
+                 <a href="index.html"><img class="u-max-full-width" src="images/top_sp/logo.png" alt="ショッピングサイト" srcset="images/top_sp/logo@2x.png 2x" /></a>
+                 </h1>
+                <h1 class="logo-pc">
+                 <a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="ショッピングサイト" srcset="images/top/logo@2x.png 2x" /></a>
+                 </h1>
+              </div>
+              
+              <nav class="six columns" >
+                  <ul class="sp-navi-li">
+                    <li><a href="#"><img src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x" /></a></li>
+                    <li><a href="#"><img src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x" /></a></li>
+                    <li>
+                        <div id="menu"><img src="images/top_sp/menu_icon.png" alt="menu" srcset="images/top_sp/menu_icon@2x.png 2x" /></div>
+                        <ul class="sp_menu_toggle">
+                          <li><a href="index.html">ログイン</a></li>
+                          <li><a href="#">カート</a></li>
+                          <li><a href="#">マイページ</a></li>
+                          <li><a href="#">ショッピングガイド</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                  <ul class="pc-navi-li">
+                    <li><a href="#"><img src="images/top/menu_login.png" alt="log in"/></a></li>
+                    <li><a href="#"><img src="images/top/menu_cart.png" alt="cart"/></a></li>
+                    <li><a href="#"><img src="images/top/menu_mypage.png" alt="mypage"/></a></li>
+                    <li><a href="#"><img src="images/top/menu_guide.png" alt="shopping guide"/></a></li>
+                    <li class="sns"><a href="#"><img src="images/top/facebook.png" alt="facebook"/></a></li>
+                    <li ><a href="#"><img src="images/top/insta.png" alt="instagram"/></a></li>
+                  </ul>
+              </nav> <!-- sns_navi -->
+            </div><!-- row -->
+          </div><!-- header_in -->
+        </header>
+  
+        <!--メインコンテンツ-->
+        <div id="main">
+          <div class="container p10">
+            <div class="row">
+              <div class="nine columns">
+              <!-- スライド -->
+                <div id="slide-area">
+                    <!-- カルーセル -->
+                    <div class="owl-carousel owl-theme">
+                        <div><img src="images/top/ca_banner.jpg" alt="Especially for You" /></div>
+                        <div><img src="images/top/ca_banner.jpg" alt="Especially for You" /></div>
+                        <div><img src="images/top/ca_banner.jpg" alt="Especially for You" /></div>
+                        <div><img src="images/top/ca_banner.jpg" alt="Especially for You" /></div>
+                    </div>
+                </div>
+                 <!-- 商品 -->
+                <div id="item-area">
+                    <!-- 新商品一覧 -->
+                    <section class="new-items">
+                    <h2 >
+                        <span class="sp"><img src="images/top_sp/title_new_item.png" alt="新商品一覧" srcset="images/top_sp/title_new_item@2x.png 2x" /></span>
+                        <span class="pc"><img src="images/top/title_newitems.png" alt="新商品一覧"  /></span>
+                    </h2>
+                    <div class="items-container">
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html" >
+                        <img src="images/top/item_01.jpg" class="u-full-width" alt="商品01" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_02.jpg" class="u-full-width" alt="商品02" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_03.jpg" class="u-full-width" alt="商品03" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_04.jpg" class="u-full-width" alt="商品04" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_05.jpg" class="u-full-width" alt="商品05" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_06.jpg" class="u-full-width" alt="商品06" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                     </div>  
+                    </section>
+                    <!-- 定番商品一覧 -->
+                    <section class="popular-items">
+                    <h2 >
+                        <span class="sp"><img src="images/top_sp/title_popular.png" alt="定番商品" srcset="images/top_sp/title_popular@2x.png 2x" /></span>
+                        <span class="pc"><img src="images/top/title_popular.png" alt="定番商品"  /></span>
+                        </h2>
+                      <div class="items-container">
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_07.jpg" class="u-full-width" alt="商品07" /> 
+                        <p>商品名が入ります商品名が入ります商品名��入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_08.jpg" class="u-full-width" alt="商品08" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_09.jpg" class="u-full-width" alt="商品09" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_10.jpg" class="u-full-width" alt="商品10" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_11.jpg" class="u-full-width" alt="商品11" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                      <!-- 商品box -->
+                      <div class="itembox">
+                       <a href="products.html">
+                        <img src="images/top/item_12.jpg" class="u-full-width" alt="商品12" /> 
+                        <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                        <p class="price">¥10,000 (tax in)</p>
+                       </a>
+                      </div>
+                    </div>  
+                    </section>
+
+                </div> <!-- item area -->
+                
+                <!-- ショッピングガイド -->
+                <div id="guide">
+                    <h2>
+                        <span class="sp"><img src="images/top_sp/title_guide.png" alt="ショッピングガイド" srcset="images/top_sp/title_guide@2x.png 2x" /></span>
+                        <span class="pc"><img src="images/top/title_guide.png" alt="ショッピングガイド"  /></span>   
+                    </h2>
+                    
+                    <!-- お届けについて -->
+                    <div class="guide-pcbox">
+                        <div class="guide_description">
+                            <h3>お届けについて</h3>
+                            <img src="images/top/otodoke_banner.png" alt="合計¥5000円以上で送料無料" />
+                            
+                            <!-- ガイド詳細 -->
+                            <div class="">
+                                <h4 >○○運輸</h4>
+                                <p>送料¥○○円</p>
+                            </div>
+                            <!-- ガイド詳細 -->
+                            <div class="">
+                                <h4 >ゆうパケット</h4>
+                                <p>ポスト投函となります。 日時指定不可</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 決済について -->
+                        
+                        <div class="guide_description">
+                            <h3>決済について</h3>
+                            <!-- ガイド詳細 -->
+                            <div class="">
+                                <h4 >カード決済</h4>
+                                <img src="images/top/cards.png" alt="visa,master,jcb,amex,paypal" class="u-max-full-width" />
+                            </div>
+                            <!-- ガイド詳細 -->
+                            <div class="">
+                                <h4 >代金引換</h4>
+                                <p>代引き手数料が別途かかります。</p>
+                            </div>
+                            <!-- ガイド詳細 -->
+                            <div class="">
+                                <h4 >銀行振込</h4>
+                                <p>お振込手数料お客様負担。ご入金後の発送となります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- nine columns -->
+              
+              <!-- ここからpcでは左サイド -->
+              <div class="three columns">
+                <aside id="shop-info">
+                    <!-- サイト内検索 -->
+                    <div class="site_search">
+                        <dl>
+                        <dt></dt>
+                        <dd>
+                            <form name="searchform" id="searchform" method="get" action="#">  
+                            <input type="text" name="keywords" id="keywords" value="" placeholder="Search.."/>  
+                            <input type="image" src="images/top/search_icon.png" alt="検索" name="searchBtn" id="searchBtn" />  
+                            </form>
+                        </dd>
+                        </dl> 
+                    </div>
+                    
+                    <!-- ページリンク ボタン -->
+                    <div>
+                        <a href="index.html" class="info-btn">
+                            <img src="images/top/pagelink.png" alt="ページリンク" />
+                        </a>
+                    </div>
+                    <!-- カテゴリープルダウン -->
+                    <div class="info-puldown">
+                        <div class="info-btn2" id="category-puldown"  ><img src="images/top/categories.png" alt="カテゴリー" /></div>
+                    		<ul>
+                    			<li><a href="list.html">カテゴリー名</a></li>
+                    			<li><a href="list.html">カテゴリー名</a></li>
+                    			<li><a href="list.html">カテゴリー名</a></li>
+                    			<li><a href="list.html">カテゴリー名</a></li>
+                    			<li><a href="list.html">カテゴリー名</a></li>
+                    			<li><a href="list.html">カテゴリー名</a></li>
+                    		</ul>
+                    </div>
+                    <!-- about -->
+                    <div>
+                        <div class="info-ttl">
+                            <img src="images/top/about.png" alt="about" />
+                        </div>
+                        <div class="info_description clearfix">
+                           <div class="box"><img class="u-max-full-width" src="images/top/about_img.jpg" alt="about" />
+                           </div>
+                           <div class="box"><p>
+                               お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
+                           <a href="#"><img src ="images/top/more_btn.png" class="more-btn"  alt="もっと見る" /></a>
+                           </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <!-- shop info -->
+                    <div>
+                        <div class="info-ttl">
+                            <img src="images/top/shop_info.png" alt="shop info" />
+                        </div>
+                        <div class="info_description clearfix">
+                           <div class="box"><img class="u-max-full-width" src="images/top/shopinfo_img.jpg" alt="shop info" /></div>
+                           <div class="box"><p>
+                               お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
+                           <a href="#"><img src ="images/top/more_btn.png" class="more-btn" alt="もっと見る" /></a>
+                           </div>
+                           
+                        </div>
+                    </div>
+                    </aside>
+                </div><!-- //左サイド終わり -->
+            </div><!-- //row -->
+          </div><!-- //container -->
+        </div><!-- //main -->
+        <footer>
+        <!-- ページトップへ -->    
+            <div class="btn_top">
+                <a href="#header_in" ><img class="u-max-full-width" src="images/top/pagetop.png" alt="ページトップへ" /></a>
+            </div>
+            <ul>
+                <li><a href="index.html" >特定商取引に基づく表記</a></li>
+                <li><a href="index.html" >プライバシーポリシー</a></li>
+                <li><a href="index.html" >マイページ</a></li>
+            </ul>
+            <p class="copyright" >copyright&copy;APPLE BERRY all rights reserved.</p>
+            
+        </footer><!-- //footer -->
+        </div>
+    </body>
+</html>
